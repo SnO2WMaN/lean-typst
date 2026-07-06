@@ -1,0 +1,16 @@
+{"version": "1.2.0",
+ "packagesDir": ".lake/packages",
+ "packages":
+ [{"url": "https://github.com/leanprover-community/ProofWidgets4",
+   "type": "git",
+   "subDir": null,
+   "scope": "",
+   "rev": "24b0d9dc081c5423f8eec7e866c441e5184f29d9",
+   "name": "proofwidgets",
+   "manifestFile": "lake-manifest.json",
+   "inputRev": "v0.0.102",
+   "inherited": false,
+   "configFile": "lakefile.lean"}],
+ "name": "«lean-typst-webview»",
+ "lakeDir": ".lake",
+ "fixedToolchain": false}
