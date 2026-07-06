@@ -1,3 +1,5 @@
+module
+
 import LeanTypst.Typst
 
 /-! Demo: compile a Typst snippet and display it as a rendered image in the Lean Infoview.
@@ -19,5 +21,5 @@ to typeset a proof tree, fetched on demand from the official Typst package regis
 #context prooftree(tree, stroke: text.fill + 0.05em)
 "#
 
-def main : IO Unit :=
+public def main : IO Unit :=
   IO.println "lean-typst"
