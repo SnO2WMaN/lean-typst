@@ -2,7 +2,7 @@ import ProofWidgets.Component.HtmlDisplay
 
 open Lean Server Elab Command ProofWidgets
 
-namespace LeanTypstWebview
+namespace LeanTypst
 
 structure TypstDisplayProps where
   src : String
@@ -28,4 +28,4 @@ def elabTypstCmd : CommandElab := fun
       stx
   | stx => throwError "Unexpected syntax {stx}."
 
-end LeanTypstWebview
+end LeanTypst

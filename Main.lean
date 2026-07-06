@@ -1,4 +1,4 @@
-import LeanTypstWebview.Typst
+import LeanTypst.Typst
 
 /-! Demo: compile a Typst snippet and display it as a rendered image in the Lean Infoview.
 The second demo uses the `curryst` package (https://typst.app/universe/package/curryst/)
@@ -20,4 +20,4 @@ to typeset a proof tree, fetched on demand from the official Typst package regis
 "#
 
 def main : IO Unit :=
-  IO.println "lean-typst-webview"
+  IO.println "lean-typst"

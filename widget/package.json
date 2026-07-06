@@ -1,5 +1,5 @@
 {
-  "name": "lean-typst-webview-widget",
+  "name": "lean-typst-widget",
   "private": true,
   "type": "module",
   "scripts": {

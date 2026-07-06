@@ -1,7 +1,7 @@
 import Lake
 open Lake DSL System
 
-package «lean-typst-webview» where
+package «lean-typst» where
   version := v!"0.1.0"
 
 require proofwidgets from git
@@ -65,9 +65,9 @@ def widgetJsAllTarget (pkg : Package) : FetchM (Job Unit) := do
 target widgetJsAll pkg : Unit := widgetJsAllTarget pkg
 
 @[default_target]
-lean_lib LeanTypstWebview where
+lean_lib LeanTypst where
   needs := #[widgetJsAll]
 
 @[default_target]
-lean_exe «lean-typst-webview» where
+lean_exe «lean-typst» where
   root := `Main
