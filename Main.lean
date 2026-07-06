@@ -10,13 +10,13 @@ to typeset a proof tree, fetched on demand from the official Typst package regis
 #import "@preview/curryst:0.6.0": rule, prooftree
 
 #let tree = rule(
-  name: [∧-intro],
-  rule(name: [Ax], [$Γ ⊢ φ$]),
-  rule(name: [Ax], [$Γ ⊢ ψ$]),
-  [$Γ ⊢ φ ∧ ψ$],
+  name: [$and$-intro],
+  rule(name: [Ax], [$Gamma tack.r phi$]),
+  rule(name: [Ax], [$Gamma tack.r psi$]),
+  [$Gamma tack.r phi and psi$],
 )
 
-#prooftree(tree)
+#context prooftree(tree, stroke: text.fill + 0.05em)
 "#
 
 def main : IO Unit :=
