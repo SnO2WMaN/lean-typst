@@ -1,8 +1,11 @@
-import ProofWidgets.Component.HtmlDisplay
+module
 
-open Lean Server Elab Command ProofWidgets
+public import ProofWidgets.Component.HtmlDisplay
+
+public meta section
 
 namespace LeanTypst
+open Lean Server Elab Command ProofWidgets
 
 structure TypstDisplayProps where
   src : String
