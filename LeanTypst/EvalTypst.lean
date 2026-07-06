@@ -24,6 +24,8 @@ unsafe def elabEvalTypstCoreUnsafe (stx : Syntax) (t : TSyntax `term) : CommandE
     let e ← Term.elabTermEnsuringType t (mkConst ``String)
     Term.synthesizeSyntheticMVarsNoPostponing
     evalExpr String (mkConst ``String) (← instantiateMVars e)
+  if let some err ← checkTypstCompiles s then
+    throwErrorAt stx "Typst compile error:\n{err}"
   liftCoreM <| Widget.savePanelWidgetInfo
     (hash TypstDisplay.javascript)
     (return json% { src: $(← rpcEncode s) })
