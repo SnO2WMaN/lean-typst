@@ -11,6 +11,6 @@
    "inputRev": "v0.0.102",
    "inherited": false,
    "configFile": "lakefile.lean"}],
- "name": "«lean-typst»",
+ "name": "lean_typst",
  "lakeDir": ".lake",
  "fixedToolchain": false}

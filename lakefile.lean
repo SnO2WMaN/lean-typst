@@ -1,7 +1,10 @@
 import Lake
 open Lake DSL System
 
-package «lean-typst» where
+-- Named without a hyphen so downstream projects can write a plain
+-- `require lean_typst from git ...` — a hyphenated name (e.g. `«lean-typst»`)
+-- requires guillemets there too, which is an easy trap for external users.
+package lean_typst where
   version := v!"0.1.0"
 
 require proofwidgets from git
