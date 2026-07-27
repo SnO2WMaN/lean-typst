@@ -8,7 +8,7 @@ package lean_typst where
   version := v!"0.1.0"
 
 require proofwidgets from git
-  "https://github.com/leanprover-community/ProofWidgets4" @ "v0.0.102"
+  "https://github.com/leanprover-community/ProofWidgets4" @ "v0.0.105"
 
 def widgetDir : FilePath := "widget"
 
