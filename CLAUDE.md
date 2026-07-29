@@ -13,7 +13,7 @@ elaboration time.
 
 - Build: `lake build` (also builds the `widget/` TypeScript bundle via npm/esbuild; see below)
 - Run the executable: `lake exe lean-typst`
-- Lean toolchain is pinned via `lean-toolchain` (`leanprover/lean4:v4.31.0`).
+- Lean toolchain is pinned via `lean-toolchain` (`leanprover/lean4:v4.32.2`).
 - Widget-only rebuild: `cd widget && npm run build`
 - Widget typecheck: `cd widget && npx tsc --noEmit -p .`
 - CI (`.github/workflows/lean_action_ci.yml`) runs `leanprover/lean-action@v1` on push/PR.
